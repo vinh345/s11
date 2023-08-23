@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let maxRow = 10;
+        let maxCel = 10;
+
+
+        for (let row = 0; row < maxRow; row++) {
+
+            for (let cel = 0; cel < row + 1; cel++) {
+                document.write(cel);
+            }
+            document.write("<br/>");
+        }
+
+        document.write("<br/>");
+
+        for (let row = 9; row >= 0; row--) {
+
+            for (let cel = 0; cel < row + 1; cel++) {
+                document.write(cel);
+            }
+            document.write("<br/>");
+        }
+
+        document.write("<br/>");
+
+        for (let row = 0; row < maxRow; row++) {
+
+            for (let cel = 0; cel < row + 1; cel++) {
+                document.write("&nbsp;&nbsp;");
+            }
+            for (let cel = row; cel < maxRow; cel++) {
+                document.write(cel);
+            }
+            document.write("<br/>");
+        }
+
+        document.write("<br/>");
+
+        for (let row = 9; row >= 0; row--) {
+
+            for (let cel = 0; cel < row + 1; cel++) {
+                document.write("&nbsp;&nbsp;");
+            }
+            for (let cel = row; cel < maxRow; cel++) {
+                document.write(cel);
+            }
+            document.write("<br/>");
+        }
+
+
+        for (let i = 10; i >= 1; i--) {
+
+            for (let j = 1; j <= i; j++) {
+                document.write("*");
+            }
+
+            document.write("<br>");
+
+        }
+    </script>
+</body>
+</html>

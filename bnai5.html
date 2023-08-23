@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt("mời nhập vào 1 số");
+        let laSoNguyenTo = true;
+        let i = 2;
+
+        if (a < 2) {
+            alert("đây không là số nguyên tố");
+        }
+        else if (a == 2) {
+            alert("đây không là số nguyên tố");
+        }
+        else {
+            do {
+                if (a % i == 0) {
+                    alert("đây không là số nguyên tố");
+                    laSoNguyenTo = false;
+                    break;
+                }
+                i++
+            } while (i < a);
+            if (laSoNguyenTo) {
+                alert("là số ng tố");
+            }
+        } 
+    </script>
+</body>
+
+</html>
